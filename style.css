@@ -52,9 +52,7 @@ body {
         /* color: #000; */
         backdrop-filter: blur(1px);
         width: 100%;
-        
 }
-
 
 .wrapper .screen {
     min-width: 100%;
@@ -78,7 +76,6 @@ body {
 
 .wrapper.show-category .home-screen {
     transform: translateX(-100%);
-
 }
 
 .wrapper.show-category .category-screen {
@@ -259,8 +256,6 @@ body {
     align-items: center;
 }
 
-
-
 .task {
     display: flex;
     gap: 0.5rem;
@@ -339,15 +334,6 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
-
-/* .task-wrapper .delete #edit{
-    fill: rgba(0, 0, 0, 1)
-} 
-.task-wrapper .delete #edit:hover{
-    fill: rgb(7, 86, 245);
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-} */
 
 .no-tasks {
     margin-top: 5rem;
