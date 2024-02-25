@@ -322,7 +322,6 @@ body {
     gap: 1rem;
     align-items: center;
     transition: all 0.3s;
-    border: 2px solid rgb(21, 255, 0);
 }
 
 .task-wrapper:hover .delete{
