@@ -1,3 +1,21 @@
+let selectedCategory = categories[0];
+const categoriesContainer = document.querySelector(".categories");
+const screenWrapper = document.querySelector(".wrapper");
+const menuBtn = document.querySelector(".menu-btn");
+const backBtn = document.querySelector(".back-btn");
+const tasksContainer = document.querySelector(".tasks");
+const numTasks = document.getElementById("num-tasks");
+const categoryTitle = document.getElementById("category-title");
+const categoryImg = document.getElementById("category-img");
+const categorySelect = document.getElementById("category-select");
+const addTaskWrapper = document.querySelector(".add-task");
+const addTaskBtn = document.querySelector(".add-task-btn");
+const taskInput = document.getElementById("task-input");
+const blackBackdrop = document.querySelector(".black-backdrop");
+const addBtn = document.querySelector(".add-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+const totalTasks = document.getElementById("total-tasks");
+
 const updateClock = () => {
   const now = new Date();
 
@@ -18,25 +36,6 @@ const updateClock = () => {
 
 updateClock()
 setInterval(updateClock, 1000)
-
-
-let selectedCategory = categories[0];
-const categoriesContainer = document.querySelector(".categories");
-const screenWrapper = document.querySelector(".wrapper");
-const menuBtn = document.querySelector(".menu-btn");
-const backBtn = document.querySelector(".back-btn");
-const tasksContainer = document.querySelector(".tasks");
-const numTasks = document.getElementById("num-tasks");
-const categoryTitle = document.getElementById("category-title");
-const categoryImg = document.getElementById("category-img");
-const categorySelect = document.getElementById("category-select");
-const addTaskWrapper = document.querySelector(".add-task");
-const addTaskBtn = document.querySelector(".add-task-btn");
-const taskInput = document.getElementById("task-input");
-const blackBackdrop = document.querySelector(".black-backdrop");
-const addBtn = document.querySelector(".add-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-const totalTasks = document.getElementById("total-tasks");
 
 let categories = [
   {
@@ -170,7 +169,8 @@ let tasks = [
     category: "Finance",
     completed: false,
   },
-  // Additional tasks for each category
+
+
   {
     id: 17,
     task: "Buy new clothes",
@@ -225,7 +225,9 @@ let tasks = [
     category: "Finance",
     completed: false,
   },
-  
+];
+
+
 const saveLocal = () => {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
@@ -370,7 +372,7 @@ const renderTasks = () => {
       deleteBtn.addEventListener("click", () => {
         const index = tasks.findIndex((t) => t.id === task.id);
         tasks.splice(index);
-        // tasks.remove()
+
         saveLocal();
         renderTasks();
       });
@@ -416,6 +418,7 @@ addTaskBtn.addEventListener("click", toggleAddTaskForm);
 blackBackdrop.addEventListener("click", toggleAddTaskForm);
 addBtn.addEventListener("click", addTask);
 cancelBtn.addEventListener("click", toggleAddTaskForm);
+
 
 getLocal();
 renderTasks();
