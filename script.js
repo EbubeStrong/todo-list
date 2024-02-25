@@ -1,5 +1,3 @@
-
-
 const updateClock = () => {
   const now = new Date();
 
