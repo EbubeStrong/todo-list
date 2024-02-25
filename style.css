@@ -315,19 +315,6 @@ body {
     opacity: 0.6;
 }
 
-/* .task-wrapper .delete {
-    min-width: 2rem;
-    height: 2rem;
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: #2e2e2e;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.031);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-} */
-
 .task-wrapper .delete{
     min-width: 2rem;
     height: 2rem;
@@ -353,23 +340,13 @@ body {
     border-radius: 50%;
 }
 
-.task-wrapper .delete #edit{
+/* .task-wrapper .delete #edit{
     fill: rgba(0, 0, 0, 1)
-}
+} 
 .task-wrapper .delete #edit:hover{
     fill: rgb(7, 86, 245);
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-}
-
-/* .task-wrapper:hover .delete {
-    opacity: 1;
-    visibility: visible;
-}
-
-.task-wrapper .delete:hover {
-    color: red;
-    background-color: rgba(0, 0, 0, 0.1);
 } */
 
 .no-tasks {
@@ -522,9 +499,5 @@ button.cancel-btn{
         height: 100vh;
         border-radius: 40px;
         border: 10px solid #2e2e2e;
-    }
-
-    body {
-    height: 200vh;
     }
 }
