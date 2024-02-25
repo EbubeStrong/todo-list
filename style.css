@@ -525,6 +525,6 @@ button.cancel-btn{
     }
 
     body {
-    min-height: 200vh;
+    height: 200vh;
     }
 }
