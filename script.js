@@ -21,24 +21,6 @@ const updateClock = () => {
 updateClock()
 setInterval(updateClock, 1000)
 
-let selectedCategory = categories[0];
-const categoriesContainer = document.querySelector(".categories");
-const screenWrapper = document.querySelector(".wrapper");
-const menuBtn = document.querySelector(".menu-btn");
-const backBtn = document.querySelector(".back-btn");
-const tasksContainer = document.querySelector(".tasks");
-const numTasks = document.getElementById("num-tasks");
-const categoryTitle = document.getElementById("category-title");
-const categoryImg = document.getElementById("category-img");
-const categorySelect = document.getElementById("category-select");
-const addTaskWrapper = document.querySelector(".add-task");
-const addTaskBtn = document.querySelector(".add-task-btn");
-const taskInput = document.getElementById("task-input");
-const blackBackdrop = document.querySelector(".black-backdrop");
-const addBtn = document.querySelector(".add-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-const totalTasks = document.getElementById("total-tasks");
-
 let categories = [
   {
     title: "Personal",
@@ -413,6 +395,24 @@ const addTask = (e) => {
     renderTasks();
   }
 };
+
+let selectedCategory = categories[0];
+const categoriesContainer = document.querySelector(".categories");
+const screenWrapper = document.querySelector(".wrapper");
+const menuBtn = document.querySelector(".menu-btn");
+const backBtn = document.querySelector(".back-btn");
+const tasksContainer = document.querySelector(".tasks");
+const numTasks = document.getElementById("num-tasks");
+const categoryTitle = document.getElementById("category-title");
+const categoryImg = document.getElementById("category-img");
+const categorySelect = document.getElementById("category-select");
+const addTaskWrapper = document.querySelector(".add-task");
+const addTaskBtn = document.querySelector(".add-task-btn");
+const taskInput = document.getElementById("task-input");
+const blackBackdrop = document.querySelector(".black-backdrop");
+const addBtn = document.querySelector(".add-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+const totalTasks = document.getElementById("total-tasks");
 
 menuBtn.addEventListener("click", toggleScreen);
 backBtn.addEventListener("click", toggleScreen);
