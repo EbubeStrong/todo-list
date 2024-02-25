@@ -516,7 +516,7 @@ button.cancel-btn{
 
 @media (min-width:768px) {
     .wrapper {
-        height: 100vh;
+        height: 50rem;
         width: 25rem;
         border-radius: 40px;
         border: 10px solid #2e2e2e;
