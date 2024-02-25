@@ -523,4 +523,8 @@ button.cancel-btn{
         border-radius: 40px;
         border: 10px solid #2e2e2e;
     }
+
+    body {
+    min-height: 100vh;
+    }
 }
