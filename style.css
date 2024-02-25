@@ -318,9 +318,6 @@ body {
     background-color: rgba(0, 0, 0, 0.031);
     opacity: 0;
     visibility: hidden;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
     transition: all 0.3s;
 }
 
