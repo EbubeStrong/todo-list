@@ -54,7 +54,7 @@ body {
     border-radius: 40px;
 }
 
-#clock{
+/* #clock{
         padding: 30px 50px 20px 50px;
         font-family: monospace;
         font-size: 3.5rem;
@@ -63,7 +63,7 @@ body {
         backdrop-filter: blur(1px);
         width: 100%;
         
-}
+} */
 
 
 .wrapper .screen {
